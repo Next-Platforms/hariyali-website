@@ -13,7 +13,7 @@ const Footer = ({ config }: { config: TFooter["footer"] }) => {
             <img
               src={config.logo.imageUrl}
               alt={config.logo.alt}
-              className="h-12"
+              className="h-20"
             />
             <span className="text-3xl font-poppins font-bold">
               {config.logo.logoText}

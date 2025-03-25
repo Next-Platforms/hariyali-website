@@ -2,21 +2,27 @@ export const Home_Config = {
   hero: {
     title: "Mera Ped Meri Pehchaan",
     description:
-      "Our vision for a better future starts with you. An environmental sustainability initiative that focuses on real-time tracking and public engagement.",
-    button: { title: "Join Now", href: "#" },
+      "An initiative that is history in the making. The world's first grassroots organized Tree Adoption Campaign. ",
+    button: {
+      title: "Join Now",
+      href: "#",
+    },
     cardOne: {
       imageUrl: "/hero-1.jpeg",
-      text: "Lorem Ipsum Dolor Sit Amet, consecteur elit.",
+      text: "Don't just plant, Adopt",
     },
     cardTwo: {
       imageUrl: "/hero-2.jpeg",
-      text: "Lorem Ipsum Dolor Sit Amet, consecteur elit.",
+      text: "A rapidly expanding initiative across Maharashtra & Telangana",
     },
     cardThree: {
       imageUrl: "/hero-3.jpeg",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+      text: "Mission Hariyali 2025, is a non-profit initiative launched with the aim of creating sustainable greenery across India.",
     },
-    background: { imageUrl: "/hero-bg.jpeg", alt: "Hero Background" },
+    background: {
+      imageUrl: "/hero-bg.jpeg",
+      alt: "Hero Background",
+    },
   },
 
   notices: {
@@ -80,11 +86,12 @@ export const Home_Config = {
     title: "Meet the Team",
     members: [
       {
-        profilePicture: { imageUrl: "/women.jpeg" },
-        name: "Jane Doe",
-        position: "CEO",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        profilePicture: {
+          imageUrl: "/women.jpeg",
+        },
+        name: "Sdr. Yogi Gurpreet Singh",
+        position: "Project Head",
+        description: "Intro of sir",
         socialLinks: [
           {
             title: "Facebook",
@@ -124,11 +131,12 @@ export const Home_Config = {
         ],
       },
       {
-        profilePicture: { imageUrl: "/women.jpeg" },
-        name: "Jane Doe",
-        position: "CEO",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        profilePicture: {
+          imageUrl: "/women.jpeg",
+        },
+        name: "Dr. Jaichand",
+        position: "Principal Advisor",
+        description: "Intro of sir",
         socialLinks: [
           {
             title: "Facebook",
@@ -168,55 +176,12 @@ export const Home_Config = {
         ],
       },
       {
-        profilePicture: { imageUrl: "/women.jpeg" },
-        name: "Jane Doe",
-        position: "CEO",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
-        socialLinks: [
-          {
-            title: "Facebook",
-            href: "#",
-            icon: {
-              imageUrl: "/fb.png",
-            },
-          },
-          {
-            title: "Instagram",
-            href: "#",
-            icon: {
-              imageUrl: "ig.png",
-            },
-          },
-          {
-            title: "Twitter",
-            href: "#",
-            icon: {
-              imageUrl: "x.png",
-            },
-          },
-          {
-            title: "LinkedIn",
-            href: "#",
-            icon: {
-              imageUrl: "li.png",
-            },
-          },
-          {
-            title: "YouTube",
-            href: "#",
-            icon: {
-              imageUrl: "yt.png",
-            },
-          },
-        ],
-      },
-      {
-        profilePicture: { imageUrl: "/women.jpeg" },
-        name: "Jane Doe",
-        position: "CEO",
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.",
+        profilePicture: {
+          imageUrl: "/women.jpeg",
+        },
+        name: "Dr. Sangeeta Dongre",
+        position: "Maharashtra Head Co-ordinator",
+        description: "Intro of ma'am",
         socialLinks: [
           {
             title: "Facebook",
@@ -284,7 +249,10 @@ export const Home_Config = {
     },
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    button: { title: "Enroll Now", href: "#" },
+    button: {
+      title: "Enroll Now",
+      href: "#",
+    },
     cardOne: {
       title:
         "Become a part of the thousands of Volunteers across the entire nation.",
@@ -316,6 +284,37 @@ export const Home_Config = {
         },
       ],
     },
+  },
+
+  testimonials: {
+    id: "testimonials",
+    title: "Testimonials",
+    testimonials: [
+      {
+        videoUrl: "https://www.youtube.com/embed/K4DyBUG242c",
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/K4DyBUG242c",
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/K4DyBUG242c",
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/K4DyBUG242c",
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/K4DyBUG242c",
+      },
+      {
+        videoUrl: "https://www.youtube.com/embed/K4DyBUG242c",
+      },
+    ],
+  },
+
+  contact: {
+    id: "contact",
+    title: "Contact",
+    formSubmitButtonText: "Submit",
   },
 };
 

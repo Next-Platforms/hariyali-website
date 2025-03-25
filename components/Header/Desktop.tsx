@@ -10,7 +10,7 @@ const Desktop = ({ config }: { config: THeader["header"] }) => {
         <img
           src={config.logo.imageUrl}
           alt={config.logo.alt}
-          className="h-12"
+          className="h-20"
         />
       </Link>
       <nav className="flex items-center gap-6">

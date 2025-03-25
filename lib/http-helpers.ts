@@ -12,7 +12,8 @@ export const apis = {
 
 export const getConfig = async (name: string) => {
   const response = await fetch(apis.getContent(name), {
-    next: { revalidate: RE_VALIDATE_IN_MINS * 60 },
+    // next: { revalidate`: RE_VALIDATE_IN_MINS * 60 },
+    cache: "no-cache",
   });
   const res = await response.json();
   return res?.data[0]?.content;

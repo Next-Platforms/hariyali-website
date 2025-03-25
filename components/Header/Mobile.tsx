@@ -15,7 +15,7 @@ const Mobile = ({ config }: { config: THeader["header"] }) => {
           <img
             src={config.logo.imageUrl}
             alt={config.logo.alt}
-            className="h-12"
+            className="h-20"
           />
         </Link>
         <span
