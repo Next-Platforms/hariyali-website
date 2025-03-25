@@ -1,3 +1,101 @@
+// Header Config
+export const Header_Config = {
+  header: {
+    logo: { imageUrl: "/logo.svg", alt: "Hariyali", href: "/" },
+    nav: [
+      { title: "Home", href: "/" },
+      { title: "The Mission", href: "#" },
+      { title: "Team", href: "#" },
+      { title: "Partners", href: "#" },
+      { title: "Contact", href: "#" },
+    ],
+    button: { title: "Join Us", href: "#" },
+    mobileMenuText: "Menu",
+  },
+};
+export type THeader = typeof Header_Config;
+
+// Footer Config
+export const Footer_Config = {
+  footer: {
+    logo: {
+      imageUrl: "/logo.svg",
+      alt: "Hariyali",
+      href: "/",
+      logoText: "Hariyali",
+    },
+    socialLinks: [
+      {
+        title: "Facebook",
+        href: "#",
+        icon: {
+          imageUrl: "/fb.png",
+        },
+      },
+      {
+        title: "Instagram",
+        href: "#",
+        icon: {
+          imageUrl: "ig.png",
+        },
+      },
+      {
+        title: "Twitter",
+        href: "#",
+        icon: {
+          imageUrl: "x.png",
+        },
+      },
+      {
+        title: "LinkedIn",
+        href: "#",
+        icon: {
+          imageUrl: "li.png",
+        },
+      },
+      {
+        title: "YouTube",
+        href: "#",
+        icon: {
+          imageUrl: "yt.png",
+        },
+      },
+    ],
+    inputField: {
+      placeholder: "Enter your email",
+      buttonText: "Submit",
+    },
+    linkSections: [
+      {
+        title: "Site Map",
+        links: [
+          { title: "Home", href: "/" },
+          { title: "The Mission", href: "#" },
+          { title: "Team", href: "#" },
+          { title: "Partners", href: "#" },
+          { title: "Contact", href: "#" },
+        ],
+      },
+      {
+        title: "Legal",
+        links: [
+          { title: "Privacy Policy", href: "#" },
+          { title: "Terms of Service", href: "#" },
+        ],
+      },
+      {
+        title: "Contact",
+        links: [
+          { title: "Email", href: "mailto:abcd@gmail.com" },
+          { title: "Phone", href: "tel:1234567890" },
+        ],
+      },
+    ],
+  },
+};
+export type TFooter = typeof Footer_Config;
+
+// Home Page Config
 export const Home_Config = {
   hero: {
     title: "Mera Ped Meri Pehchaan",
@@ -317,102 +415,11 @@ export const Home_Config = {
     formSubmitButtonText: "Submit",
   },
 };
-
-export const Header_Config = {
-  header: {
-    logo: { imageUrl: "/logo.svg", alt: "Hariyali", href: "/" },
-    nav: [
-      { title: "Home", href: "/" },
-      { title: "The Mission", href: "#" },
-      { title: "Team", href: "#" },
-      { title: "Partners", href: "#" },
-      { title: "Contact", href: "#" },
-    ],
-    button: { title: "Join Us", href: "#" },
-    mobileMenuText: "Menu",
-  },
-};
-
-export const Footer_Config = {
-  footer: {
-    logo: {
-      imageUrl: "/logo.svg",
-      alt: "Hariyali",
-      href: "/",
-      logoText: "Hariyali",
-    },
-    socialLinks: [
-      {
-        title: "Facebook",
-        href: "#",
-        icon: {
-          imageUrl: "/fb.png",
-        },
-      },
-      {
-        title: "Instagram",
-        href: "#",
-        icon: {
-          imageUrl: "ig.png",
-        },
-      },
-      {
-        title: "Twitter",
-        href: "#",
-        icon: {
-          imageUrl: "x.png",
-        },
-      },
-      {
-        title: "LinkedIn",
-        href: "#",
-        icon: {
-          imageUrl: "li.png",
-        },
-      },
-      {
-        title: "YouTube",
-        href: "#",
-        icon: {
-          imageUrl: "yt.png",
-        },
-      },
-    ],
-    inputField: {
-      placeholder: "Enter your email",
-      buttonText: "Submit",
-    },
-    linkSections: [
-      {
-        title: "Site Map",
-        links: [
-          { title: "Home", href: "/" },
-          { title: "The Mission", href: "#" },
-          { title: "Team", href: "#" },
-          { title: "Partners", href: "#" },
-          { title: "Contact", href: "#" },
-        ],
-      },
-      {
-        title: "Legal",
-        links: [
-          { title: "Privacy Policy", href: "#" },
-          { title: "Terms of Service", href: "#" },
-        ],
-      },
-      {
-        title: "Contact",
-        links: [
-          { title: "Email", href: "mailto:abcd@gmail.com" },
-          { title: "Phone", href: "tel:1234567890" },
-        ],
-      },
-    ],
-  },
-};
-
 export type THome = typeof Home_Config;
 
-export type THeader = typeof Header_Config;
-
-export type TFooter = typeof Footer_Config;
+// The Mission Page Config
+export const TheMission_Config = {
+  hero: {},
+  // ...more sections to be added below
+};
+export type TTheMission = typeof TheMission_Config;

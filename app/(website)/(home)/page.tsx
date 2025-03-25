@@ -3,8 +3,8 @@ import HomePage from "./";
 import { Home_Config, THome } from "../config";
 
 const Home = async () => {
-  const homeConfig = (await getConfig("Home_Config")) as THome;
-  // const homeConfig = Home_Config;
+  const homeConfig = (await getConfig("Home_Config")) as THome; // --> Fetching page config object from API
+  // const homeConfig = Home_Config; // --> Using page config object from local file
 
   return <HomePage config={homeConfig} />;
 };

@@ -1,11 +1,11 @@
 import React from "react";
-import Hero from "./Hero";
-import Notices from "./Notices";
-import About from "./About";
-import Team from "./Team";
-import Volunteer from "./Volunteer";
-import Testimonials from "./Testimonials";
-import Contact from "./Contact";
+import Hero from "./sections/Hero";
+import Notices from "./sections/Notices";
+import About from "./sections/About";
+import Team from "./sections/Team";
+import Volunteer from "./sections/Volunteer";
+import Testimonials from "./sections/Testimonials";
+import Contact from "./sections/Contact";
 import { THome } from "../config";
 
 const HomePage = ({ config }: { config: THome }) => {
