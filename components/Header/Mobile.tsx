@@ -19,7 +19,7 @@ const Mobile = ({ config }: { config: THeader["header"] }) => {
           />
         </Link>
         <span
-          className="font-poppins cursor-pointer"
+          className="font-poppins cursor-pointer text-2xl font-medium"
           onClick={() => setIsOpen(true)}
         >
           {config.mobileMenuText}
@@ -52,7 +52,7 @@ const Mobile = ({ config }: { config: THeader["header"] }) => {
           <Link
             href={config.button.href}
             onClick={() => setIsOpen(false)}
-            className="border-2 rounded-xl border-black px-4 py-1.5"
+            className="button-outline-black"
           >
             {config.button.title}
           </Link>

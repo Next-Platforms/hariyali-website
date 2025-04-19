@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { FaAngleRight } from "react-icons/fa6";
-import { THome } from "../config";
+import { THome } from "../../config";
 
 const Contact = ({ config }: { config: THome["contact"] }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -84,7 +84,7 @@ const Contact = ({ config }: { config: THome["contact"] }) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="bg-transparent text-black border-2 border-black text-xl px-6 py-2 rounded-xl mr-auto flex items-center gap-2 disabled:opacity-60"
+          className="button-outline-black mr-auto flex items-center gap-2 disabled:opacity-60 cursor-pointer"
         >
           {isSubmitting ? "Loading..." : config.formSubmitButtonText}
           <FaAngleRight className="text-base" />

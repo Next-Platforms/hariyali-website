@@ -1,8 +1,9 @@
 import React from "react";
+import CommonHeroSection from "@/components/CommonHeroSection";
 import { TTheMission } from "../../config";
 
 const Hero = ({ config }: { config: TTheMission["hero"] }) => {
-  return <section>Hero Section</section>;
+  return <CommonHeroSection config={config} />;
 };
 
 export default Hero;

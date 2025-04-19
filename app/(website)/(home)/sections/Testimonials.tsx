@@ -7,7 +7,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { THome } from "../config";
+import { THome } from "../../config";
 
 const Testimonials = ({ config }: { config: THome["testimonials"] }) => {
   return (
@@ -19,7 +19,7 @@ const Testimonials = ({ config }: { config: THome["testimonials"] }) => {
         <div>
           <Swiper
             slidesPerView={3}
-            spaceBetween="40px"
+            spaceBetween="20px"
             modules={[Pagination, Navigation]}
             navigation={{
               disabledClass: "swiper-button-disabled",
@@ -48,7 +48,7 @@ const Testimonials = ({ config }: { config: THome["testimonials"] }) => {
                 <div className="flex flex-col bg-[#DAFFD3] p-5 rounded-xl">
                   <iframe
                     loading="lazy"
-                    height="300"
+                    height="400"
                     src={testimonial?.videoUrl}
                     title="YouTube video player"
                     frameBorder="0"

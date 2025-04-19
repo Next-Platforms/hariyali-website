@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { THome } from "../config";
+import { THome } from "../../config";
 
 const Volunteer = ({ config }: { config: THome["volunteer"] }) => {
   return (

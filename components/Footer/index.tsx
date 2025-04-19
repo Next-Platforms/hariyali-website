@@ -1,10 +1,44 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { TFooter } from "@/app/(website)/config";
+import { toast } from "react-toastify";
 
 const Footer = ({ config }: { config: TFooter["footer"] }) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "Footer Email Subscription", // Required
+    email: "", // Required
+    phone: "NA",
+    message: "This is a footer email subscription.", // Required
+  });
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!formData.email) {
+      toast.error("Email is required.");
+      return;
+    }
+    setIsSubmitting(true);
+    const response = await fetch("/api/handle-mail", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
+    if (response.ok) {
+      toast.success("Thank you for subscribing.");
+      setFormData({
+        name: "Footer Email Subscription",
+        email: "",
+        phone: "NA",
+        message: "This is a footer email subscription.",
+      });
+    } else {
+      toast.error("Failed to subscribe.");
+    }
+    setIsSubmitting(false);
+  };
+
   return (
     <footer className="py-10 bg-[#232D22] text-white">
       <div className="wrapper grid grid-cols-4 max-1000:grid-cols-3 gap-10 max-1000:text-center">
@@ -38,21 +72,20 @@ const Footer = ({ config }: { config: TFooter["footer"] }) => {
           </div>
           <form
             className="relative max-1000:w-96 max-600:w-80"
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
+            onSubmit={(e) => handleFormSubmit(e)}
           >
             <input
               required
               type="email"
               placeholder={config.inputField.placeholder}
-              className="w-full bg-[#DAFFD3] placeholder:text-lg placeholder:text-black/80 rounded-xl px-4 py-2"
+              className="w-full bg-[#DAFFD3] placeholder:text-sm placeholder:text-black/80 rounded-xl px-4 py-2"
             />
             <button
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#18810D] text-white/80 px-4 py-1 rounded-xl text-lg cursor-pointer"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#18810D] text-white/80 px-4 py-1 rounded-xl text-sm disabled:opacity-60 cursor-pointer"
               type="submit"
+              disabled={isSubmitting}
             >
-              {config.inputField.buttonText}
+              {isSubmitting ? "Loading..." : config.inputField.buttonText}
             </button>
           </form>
         </div>

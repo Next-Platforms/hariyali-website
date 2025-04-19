@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { THome } from "../config";
+import { THome } from "../../config";
 
 const About = ({ config }: { config: THome["about"] }) => {
   return (

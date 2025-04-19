@@ -1,4 +1,4 @@
-import { Poppins, EB_Garamond } from "next/font/google";
+import { Poppins, Inter } from "next/font/google";
 
 const poppins_init = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -6,12 +6,12 @@ const poppins_init = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
 });
-const eb_garamond_init = EB_Garamond({
+const inter_init = Inter({
   weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-eb-garamond",
+  variable: "--font-inter",
 });
 
 export const poppins = poppins_init.variable;
-export const eb_garamond = eb_garamond_init.variable;
+export const inter = inter_init.variable;

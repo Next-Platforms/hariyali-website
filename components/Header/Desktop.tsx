@@ -19,10 +19,7 @@ const Desktop = ({ config }: { config: THeader["header"] }) => {
             {item.title}
           </Link>
         ))}
-        <Link
-          href={config.button.href}
-          className="border-2 rounded-xl border-white px-4 py-1.5"
-        >
+        <Link href={config.button.href} className="button-outline">
           {config.button.title}
         </Link>
       </nav>

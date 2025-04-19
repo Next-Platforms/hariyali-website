@@ -10,7 +10,7 @@
   --color-foreground: var(--foreground);
 
   --font-poppins: var(--font-poppins);
-  --font-eb_garamond: var(--font-eb-garamond);
+  --font-inter: var(--font-inter);
 
   --breakpoint-1500: 1500px;
   --breakpoint-1450: 1450px;
@@ -43,7 +43,7 @@
     @apply max-600:text-[75%] scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground font-eb_garamond text-2xl font-normal leading-snug;
+    @apply bg-background text-foreground font-inter text-xl font-normal leading-snug;
   }
 }
 
@@ -62,5 +62,14 @@
   }
   .input {
     @apply px-4 py-2 border-2 border-black bg-transparent rounded-lg focus:outline-none placeholder-black;
+  }
+  .button-primary {
+    @apply font-poppins font-semibold border-2 border-white bg-white text-black px-6 py-2 rounded-xl;
+  }
+  .button-outline {
+    @apply font-poppins font-semibold border-2 border-white bg-transparent text-white px-6 py-2 rounded-xl;
+  }
+  .button-outline-black {
+    @apply font-poppins font-semibold border-2 border-black bg-transparent text-black px-6 py-2 rounded-xl;
   }
 }

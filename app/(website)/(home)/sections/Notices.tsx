@@ -7,7 +7,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { THome } from "../config";
+import { THome } from "../../config";
 
 const Notices = ({ config }: { config: THome["notices"] }) => {
   return (
@@ -56,7 +56,7 @@ const Notices = ({ config }: { config: THome["notices"] }) => {
                   <h3 className="text-2xl font-poppins font-semibold">
                     {notice.title}
                   </h3>
-                  <p className="mt-2 text-xl">{notice.description}</p>
+                  <p className="mt-2">{notice.description}</p>
                 </div>
               </SwiperSlide>
             ))}

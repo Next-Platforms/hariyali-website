@@ -1,5 +1,5 @@
 import "./globals.css";
-import { eb_garamond, poppins } from "@/lib/fonts";
+import { poppins, inter } from "@/lib/fonts";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import type { Metadata } from "next";
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins} ${eb_garamond} antialiased`}>
+      <body className={`${poppins} ${inter} antialiased`}>
         {children}
         <ToastContainer
           position="top-center"

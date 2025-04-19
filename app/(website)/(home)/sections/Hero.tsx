@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { THome } from "../config";
+import { THome } from "../../config";
 
 const Hero = ({ config }: { config: THome["hero"] }) => {
   return (
@@ -21,12 +21,14 @@ const Hero = ({ config }: { config: THome["hero"] }) => {
               {config.title}
             </h1>
             <p className="mt-4">{config.description}</p>
-            <Link
-              href={config.button.href}
-              className="bg-white text-black px-6 py-2 rounded-xl mt-6"
-            >
-              {config.button.title}
-            </Link>
+            <div className="flex items-center gap-4 mt-6">
+              <Link href={config.button1.href} className="button-primary">
+                {config.button1.title}
+              </Link>
+              <Link href={config.button2.href} className="button-outline">
+                {config.button2.title}
+              </Link>
+            </div>
           </div>
           <div className="w-[50%] max-1200:w-full flex flex-col gap-10">
             <div className="flex max-600:flex-col gap-10">
