@@ -7,7 +7,7 @@ const OurMission = ({ config }: { config: TTheMission["ourMission"] }) => {
     <section className="wrapper py-10 flex flex-col gap-5">
       <h2 className="text-4xl font-poppins font-bold">{config.title}</h2>
       <div className="flex flex-col gap-5">
-        {config.paragraphs.map((paragraph, index) => (
+        {config.paragraphs.map(({ paragraph }, index) => (
           <p key={index} className="text-gray-600 leading-relaxed">
             {paragraph}
           </p>
